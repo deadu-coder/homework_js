@@ -18,7 +18,8 @@ function censor() {
         }
     }
 }
-const censorNew = censor();
-censorNew('php', 'js');
-censorNew('backend', 'frontend');
-console.log(censorNew('php is the best languane for backend'));
+
+const changeScene = censor();
+changeScene('PHP','JS');
+changeScene('backend', 'frontend')
+console.log(changeScene('PHP is the most popular programming language for backend web-development'));
