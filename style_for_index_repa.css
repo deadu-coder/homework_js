@@ -1,3 +1,16 @@
-.header_src {
-    
+.header_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+    width: 100%;
+    background-color: gray;
+    color: white;
+}
+.a_looking_project {
+    text-decoration: none;
+    color: gray;
+}
+.p_header_card {
+    font-size: 24px;
 }

@@ -6,14 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeWork for JS</title>
     <link rel="stylesheet" href="./style_for_index_repa.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="header_src">
-        <a href="./censor/">Censor</a>
-        <a href="./showcase/">ShowCase</a>
-        <a href="./spoiler/">Spoiler</a>
-    </div>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="./index.html"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">CaseLab JavaScript</font>
+                </font>
+            </span>
+        </a>
+    </header>
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-img-top header_card" data-holder-rendered="true">
+                            <p class="p_header_card">Кейс "Цензор"</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <font style="vertical-align: inherit;">
+                                    <div class="text-center">
+                                        <p><b>Задача</b></p>
+                                    </div>
+                                    Создайте функцию censor, которая не принимает аргументов. Функция должна возвращать
+                                    новую функцию, принимающую опционально 1 или 2 параметра (оба - строки). <br>
+
+                                    1) Когда возвращаемая функция принимает 2 параметра, то она ничего не возвращает, а
+                                    сохраняет полученные знания как пару (пара - это массив с 2мя значениями). <br>
+
+                                    2) Когда возвращаемая функция принимает 1 параметр, то она возвращает полученную
+                                    строку, заменив в ней все слова, согласно ранее сохранённым парам.
+                                </font>
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <font style="vertical-align: inherit;"><a class="a_looking_project"
+                                                href="./censor/index.html">Посмотреть</a></font>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-img-top header_card" data-holder-rendered="true">
+                            <p class="p_header_card">Кейс "Витрина"</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <font style="vertical-align: inherit;">
+                                    <div class="text-center">
+                                        <p><b>Задача</b></p>
+                                    </div>
+                                    Есть небольшая страничка со списком товаров и корзиной.
+                                    В app.js есть массив product со списком товаров со страницы и массив order, куда
+                                    должны добавляться товары по клику на кнопку "Buy". <br><br>
+
+                                    На кнопках уже висят обработчики клика, вызывающие функцию addToBasket с передачей в
+                                    неё id товара. Необходимо доработать эту функцию, чтобы товары добавлялись в массив
+                                    заказа, при этом один и тот же това нельзя было добавить в заказ дважды. <br><br>
+
+                                    При добавлении в корзину товар автоматически будет отрисовываться на странице. А при
+                                    клике на его имя в корзине будет вызываться функция removeFromBasket.
+                                    Необходимо доработать ее функционал чтобы товар удалялся из корзины. <br><br>
+
+                                    Метод rerenderTotalPrice отвечает за расчёт общей стоимости товаров в корзине,
+                                    которая также выводится на страницу. Необходимо описать функционал перерасчета общей
+                                    суммы.
+                                </font>
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <font style="vertical-align: inherit;"><a class="a_looking_project"
+                                                href="./showcase/index.html">Посмотреть</a></font>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-img-top header_card" data-holder-rendered="true">
+                            <p class="p_header_card">Кейс "Спойлер"</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <font style="vertical-align: inherit;">
+                                    <div class="text-center">
+                                        <p><b>Задача</b></p>
+                                    </div>
+                                    При клике на кнопку блок #spoiler должен отображаться.
+                                    При повторном клике на кнопку блок #spoiler снова должен скрываться.
+                                    Когда блок #spoiler отображается, должна быть возможность закрыть его нажатием
+                                    клавиши Escapе на клавиатуре
+                                    Когда блок #spoiler скрыт, клавиша Escapе обрабатываться не должна.
+                                </font>
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <font style="vertical-align: inherit;"><a class="a_looking_project"
+                                                href="./spoiler/index.html">Посмотреть</a></font>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
